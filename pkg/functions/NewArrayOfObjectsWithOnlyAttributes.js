@@ -3,7 +3,6 @@ export default function NewArrayOfObjectsWithOnlyAttributes(
   arrayOfAttributes
 ) {
   var newArray = [];
-
   arrayOfObjects.map((x) => {
     let newObject = {};
     var arr = Object.keys(x);

@@ -13,4 +13,11 @@ var result1 = [
   { id: 4, name: 'Bobby', type: 'user', username: 'be_bob' },
 ];
 
-console.log(dario.NewArrayOfObjectsWithOnlyAttributes(result1, ['id', 'nome']));
+console.log(
+  dario.NewArrayOfObjectsWithOnlyAttributes(result1, ['id', 'nome', 'pippo']),
+  dario.NewArrayOfObjectsWithNewValuesOnAttributes(result1, [
+    'id',
+    'nome',
+    'pippo',
+  ])
+);
