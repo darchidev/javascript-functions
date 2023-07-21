@@ -5,14 +5,11 @@ export default function NewArrayOfObjectsWithOnlyAttributes(
   var newArray = [];
 
   arrayOfObjects.map((x) => {
-    var newObject = {};
+    let newObject = {};
+    var arr = Object.keys(x);
     for (var y = 0; y < arrayOfAttributes.length; y++) {
-      if (arrayOfAttributes[y] != x[arrayOfAttributes[y]]) {
-        if (newObject.keys().length > 0) {
-          newObject = { ...newObject };
-        } else {
-          newObject = { newObject };
-        }
+      if (arr.includes(arrayOfAttributes[y]) == false) {
+        newObject = { ...newObject };
       } else {
         newObject = {
           ...newObject,
